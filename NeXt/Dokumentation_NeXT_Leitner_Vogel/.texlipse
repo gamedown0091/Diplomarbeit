@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Sun Oct 02 12:12:49 CEST 2016
+markTmpDer=true
+builderNum=2
+outputDir=compiled/
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=Latex Vorlage HAK Imst.tex
+outputFile=Latex Vorlage HAK Imst.pdf
+langSpell=de
+markDer=true
+srcDir=

@@ -1,0 +1,84 @@
+\select@language {ngerman}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{12}{chapter*.9}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{14}{chapter*.10}
+\contentsline {chapter}{\nonumberline Quelltexte}{15}{chapter*.11}
+\contentsline {chapter}{\numberline {1}Einleitung}{16}{chapter.1}
+\contentsline {chapter}{\numberline {2}Projektmanagement}{17}{chapter.2}
+\contentsline {section}{\numberline {2.1}Metainformationen}{17}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Team}{17}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Betreuer}{19}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Partner}{20}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Ansprechpartner}{20}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}Vorerhebungen}{21}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Projektzieleplan}{21}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Projektumfeld}{22}{subsection.2.2.2}
+\contentsline {subsubsection}{\nonumberline Stakeholder-Analyse}{22}{section*.17}
+\contentsline {subsubsection}{\nonumberline Stakeholder-Diagramm}{23}{section*.19}
+\contentsline {subsection}{\numberline {2.2.3}Risikoanalyse}{24}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Pflichtenheft}{27}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Zielbestimmung}{27}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Produkteinsatz und Umgebung}{28}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Funktionalit\IeC {\"a}ten}{28}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Planung}{29}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Projektstrukturplan}{29}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Meilensteine}{30}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Gantt-Chart}{30}{subsection.2.4.3}
+\contentsline {chapter}{\numberline {3}Vorstellung des Produktes}{33}{chapter.3}
+\contentsline {section}{\numberline {3.1}Produktbeschreibung}{33}{section.3.1}
+\contentsline {chapter}{\numberline {4}Eingesetzte Technologien}{34}{chapter.4}
+\contentsline {section}{\numberline {4.1}Engine}{34}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Spiel-Engine}{34}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Unity-Engine}{34}{subsection.4.1.2}
+\contentsline {subsubsection}{\nonumberline Technische Eigenschaften}{35}{section*.28}
+\contentsline {section}{\numberline {4.2}Entwicklungsumgebung}{36}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Unity-Editor}{36}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Visual Studio}{36}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}C\#}{36}{section.4.3}
+\contentsline {section}{\numberline {4.4}Dokumentation}{36}{section.4.4}
+\contentsline {chapter}{\numberline {5}Problemanalyse}{38}{chapter.5}
+\contentsline {section}{\numberline {5.1}USE-Case-Analyse}{38}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Anwendungsfall: Level starten}{38}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Anwendungsfall: Spielen}{40}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}User-Interface-Design}{42}{section.5.2}
+\contentsline {chapter}{\numberline {6}Systementwurf}{45}{chapter.6}
+\contentsline {section}{\numberline {6.1}Architektur}{45}{section.6.1}
+\contentsline {chapter}{\numberline {7}Implementierung}{46}{chapter.7}
+\contentsline {section}{\numberline {7.1}Unity-Klassenstruktur}{46}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}MonoBehaviour}{46}{subsection.7.1.1}
+\contentsline {subsubsection}{\nonumberline Start-Methode}{47}{section*.35}
+\contentsline {subsubsection}{\nonumberline Update-Methode}{47}{section*.36}
+\contentsline {subsubsection}{\nonumberline FixedUpdate-Methode}{47}{section*.37}
+\contentsline {subsubsection}{\nonumberline LateUpdate-Methode}{47}{section*.38}
+\contentsline {subsection}{\numberline {7.1.2}Weitere bereitgestellten Funktionen}{48}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}GUI}{48}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Hauptmen\IeC {\"u}}{48}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Level-Men\IeC {\"u}}{56}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Pause-Men\IeC {\"u}}{58}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Leveldesign}{62}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Player}{63}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Directional light}{65}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Main Camera}{65}{subsection.7.3.3}
+\contentsline {subsection}{\numberline {7.3.4}LevelObjects}{66}{subsection.7.3.4}
+\contentsline {subsection}{\numberline {7.3.5}Falldetector}{66}{subsection.7.3.5}
+\contentsline {section}{\numberline {7.4}Spieler}{67}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}PlayerController}{67}{subsection.7.4.1}
+\contentsline {section}{\numberline {7.5}Kameraf\IeC {\"u}hrung}{69}{section.7.5}
+\contentsline {section}{\numberline {7.6}Schalter und T\IeC {\"u}ren}{69}{section.7.6}
+\contentsline {section}{\numberline {7.7}Time Rift}{71}{section.7.7}
+\contentsline {chapter}{\numberline {8}Tests}{74}{chapter.8}
+\contentsline {section}{\numberline {8.1}Systemtests}{74}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Einf\IeC {\"u}hrung}{74}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Testf\IeC {\"a}lle}{74}{subsection.8.1.2}
+\contentsline {chapter}{\numberline {9}Projektevaluation}{79}{chapter.9}
+\contentsline {section}{\numberline {9.1}Arbeitsaufwand}{79}{section.9.1}
+\contentsline {section}{\numberline {9.2}Zusammenarbeit}{79}{section.9.2}
+\contentsline {section}{\numberline {9.3}Zeitmanagement}{80}{section.9.3}
+\contentsline {section}{\numberline {9.4}Produktevaluierung}{80}{section.9.4}
+\contentsline {section}{\numberline {9.5}Kosten}{81}{section.9.5}
+\contentsline {section}{\numberline {9.6}Erfahrungen}{81}{section.9.6}
+\contentsline {section}{\numberline {9.7}Fazit}{81}{section.9.7}
+\contentsline {chapter}{\numberline {10}Zusammenfassung}{82}{chapter.10}
+\contentsline {section}{\numberline {10.1}Res\IeC {\"u}mee}{82}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Res\IeC {\"u}mee (Leitner Michael)}{82}{subsection.10.1.1}
+\contentsline {subsection}{\numberline {10.1.2}Res\IeC {\"u}mee (Vogel Lukas)}{83}{subsection.10.1.2}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{84}{chapter*.66}

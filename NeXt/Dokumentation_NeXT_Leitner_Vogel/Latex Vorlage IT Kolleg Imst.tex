@@ -1,0 +1,200 @@
+%test
+\documentclass[ngerman,
+a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper, ...
+% landscape,   %% sets the orientation to landscape
+oneside,     %% changes to a two-page-layout (alternatively: oneside)
+%autooneside,
+% twocolumn,   %% changes to a two-column-layout
+ %headsepline, %% add a horizontal line below the column title
+ %footsepline, %% add a horizontal line above the page footer
+% titlepage,   %% only the titlepage (using titlepage-environment) appears on the first page (alternatively: notitlepage)
+parskip,     %% insert an empty line between two paragraphs (alternatively: halfparskip, ...)
+% leqno,       %% equation numbers left (instead of right)
+ fleqn,       %% equation left-justified (instead of centered)
+% tablecaptionabove, %% captions of tables are above the tables (alternatively: tablecaptionbelow)
+% draft,       %% produce only a draft version (mark lines that need manual edition and don't show graphics)
+bibliography=totoc,index=totoc,listof=totoc, %Literaturverzeichnis usw auch in die Inhaltsangabe
+% 10pt,       %% set default font size to 10 point 
+ 12pt,         %% set default font size to 11 point
+%11pt         %% set default font size to 12 point
+%DIV=10, 
+ BCOR=10mm,
+]{scrreprt}  %% article, see KOMA documentation (scrguide.dvi) 
+
+% Für oft geforderte 1,5 Zeilenhöhe
+\usepackage{setspace}
+\onehalfspacing 
+
+%\KOMAoption{fontsize=14pt}
+
+% natbib für deutsche Zitate
+%\usepackage[numbers,sort&compress,super]{natbib}
+\usepackage[]{natbib} 
+\usepackage{graphicx}
+\usepackage{import} 
+
+%\usepackage[american]{babel}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+
+%%% inputenc: coding of german special characters
+\usepackage[utf8]{inputenc}
+
+%%% fontenc, ae, aecompl: coding of characters in PDF documents
+\usepackage[T1]{fontenc}
+%\usepackage{ae,aecompl}
+\usepackage{lmodern}
+
+\makeatletter
+\newcommand\cellwidth{\TX@col@width}
+\makeatother
+
+% source Code darstellen
+\usepackage[formats]{listings}
+\usepackage{float}
+\lstdefineformat{Java}
+{
+	\{=\newline\string\newline\indent,%
+	\}=\newline\noindent\string\newline,%
+	;=[\ ]\string\space,%
+}
+\usepackage{color}
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+
+\lstset{language=Java,
+	format=Java,
+	basicstyle=\ttfamily,
+	keywordstyle=\color{javapurple}\bfseries,
+	stringstyle=\color{javared},
+	commentstyle=\color{javagreen},
+	morecomment=[s][\color{javadocblue}]{/**}{*/},
+	numbers=left,
+	numberstyle=\tiny\color{black},
+	stepnumber=1,
+	numbersep=10pt,
+	tabsize=4,
+	showspaces=false,
+	showstringspaces=false,
+	breaklines=true,
+	breakatwhitespace=true,
+	frame=single,
+	}
+	
+%Copyrights 
+% graphicx mus bei Verwendung auskommentiert werden
+% ohne textcomp gab es warning 
+\usepackage{textcomp}
+\usepackage{caption, copyrightbox} 
+% Schriftart für copyrights ändern, da es sonst Warnung 
+% gab wegen deprecated Schriftart
+\makeatletter 
+\renewcommand{\CRB@setcopyrightfont}{%
+\footnotesize
+\color{gray!70}
+\usefont{T1}{phv}{m}{n}
+}
+\makeatother
+
+\usepackage{tabularx}
+\usepackage{longtable}
+
+\usepackage{units} 
+
+\makeatletter
+    \@ifpackageloaded{tex4ht}{
+      \usepackage[dvips]{color,graphicx}
+      \usepackage[tex4ht,colorlinks,allcolors = black]{hyperref}
+	}
+	{ 
+      \usepackage[colorlinks,allcolors = black]{hyperref}
+	}
+\makeatother 
+
+%\usepackage{pdfpages}
+
+\usepackage{enumitem} %For list environments
+\setlist{itemsep=-1em,topsep=-1em}
+
+
+\usepackage[babel=true,strict=true,german=quotes,threshold=1]{csquotes}
+
+
+% \publishers{}
+
+% \thanks{} %% use it instead of footnotes (only on titlepage)
+
+% \dedication{} %% generates a dedication-page after titlepage
+
+
+\usepackage{amsmath}
+\numberwithin{equation}{section}
+
+\usepackage{scrpage2}
+
+\usepackage[noabbrev]{cleveref}
+
+%%% scrheadings default: 
+%%%      footer - middle: page number
+\pagestyle{scrheadings}
+
+%\pagestyle{empty} % Seiten ohne Header
+%
+% loescht voreingestellte Stile
+\clearscrheadfoot
+ 
+%
+% Was steht wo...
+   %\ohead{\headmark - \pagemark}
+   %\ihead{\headmark}
+
+\input{inp_titlepage_kolleg.tex}
+
+\def \currentAuthor {}
+
+\makeatletter
+\let\newtitle\@title
+\let\newauthor\@author
+\let\newdate\@date
+\makeatother
+
+%Muss in der Reihenfolge stehen!:
+\automark[subsection]{section}
+%\ohead{\pagemark}
+\ihead{\newtitle}
+%\lehead{\rightmark}
+%\lohead{\leftmark}
+%\lefoot{Ausgearbeitet von \ldots}
+%\refoot{Skriptum Thermodynamik}
+\rofoot{Seite \thepage{}}
+\lofoot{Verantwortlich für den Inhalt: \currentAuthor}
+
+\newcaptionname{ngerman}{\lstlistlistingname}{Quelltexte} %Table of listings 
+\newcaptionname{ngerman}{\lstlistingname}{Quelltext}      %Listing
+\lstMakeShortInline[columns=fixed]|
+ 
+\maketitle
+
+\input{inp_posttitle.tex}
+
+\tableofcontents 
+
+\listoffigures
+
+\listoftables 
+
+\lstlistoflistings
+
+\input{inp_content.tex}
+\input{inp_examples.tex}
+
+\bibliographystyle{dinat}
+%\bibliographystyle{plainurl}
+\bibliography{Literatur_Verzeichnis} 
+
+\appendix
+\input{inp_appendix.tex}
+
+\end{document}

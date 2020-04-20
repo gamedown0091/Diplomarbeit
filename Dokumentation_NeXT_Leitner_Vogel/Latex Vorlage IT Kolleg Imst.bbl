@@ -1,0 +1,36 @@
+\begin{thebibliography}{3}
+% this bibliography was produced with the style dinat.bst v2.5
+\makeatletter
+\newcommand{\dinatlabel}[1]%
+{\ifNAT@numbers\else\NAT@biblabelnum{#1}\hspace{2\labelsep}\fi}
+\makeatother
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
+
+\bibitem[Wikipedia(2018{\natexlab{a}})]{Latex}
+\dinatlabel{Wikipedia 2018{\natexlab{a}}} \textsc{Wikipedia}:
+\newblock \emph{LaTeX --- Wikipedia{,} Die freie Enzyklopädie}.
+\newblock 2018. --
+\newblock URL
+  \url{https://de.wikipedia.org/w/index.php?title=LaTeX&oldid=178471003}. --
+\newblock [Online; Stand 23. Juni 2018]
+
+\bibitem[Wikipedia(2018{\natexlab{b}})]{Spiel-Engine}
+\dinatlabel{Wikipedia 2018{\natexlab{b}}} \textsc{Wikipedia}:
+\newblock \emph{Spiel-Engine --- Wikipedia{,} Die freie Enzyklopädie}.
+\newblock 2018. --
+\newblock URL
+  \url{https://de.wikipedia.org/w/index.php?title=Spiel-Engine&oldid=173243484}.
+  --
+\newblock [Online; Stand 22. Juni 2018]
+
+\bibitem[Wikipedia(2018{\natexlab{c}})]{Unity-Engine}
+\dinatlabel{Wikipedia 2018{\natexlab{c}}} \textsc{Wikipedia}:
+\newblock \emph{Unity (Spiel-Engine) --- Wikipedia{,} Die freie Enzyklopädie}.
+\newblock 2018. --
+\newblock URL
+  \url{https://de.wikipedia.org/w/index.php?title=Unity_(Spiel-Engine)&oldid=178184986}.
+  --
+\newblock [Online; Stand 23. Juni 2018]
+
+\end{thebibliography}
